@@ -1,12 +1,21 @@
 import React from 'react'
 import Card from '../../components/Card/Card'
+import './Home.css'
+import Navbar from '../../components/Navbar/Navbar'
 
 function Home() {
   return (
-    <div className='card px-40'>
-      <h1>Fresh recommendations</h1>
-      <Card/>
-    </div>
+    <>
+    <Navbar/>
+      <h1 className='page-heading'>Fresh recommendations</h1>
+      <div className='container'>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+    </>
+
   )
 }
 

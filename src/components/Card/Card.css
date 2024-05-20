@@ -1,0 +1,15 @@
+
+.card{
+    border: 1px solid rgb(171, 170, 170);
+    padding: 9px 9px 9px 9px;
+    width: 287px;
+}
+.card-title{
+    font-size: large;
+    font-weight: bold;
+    font-size: 21.1px;
+}
+.card-image{
+    width: 300px;
+    height: 157px;
+}

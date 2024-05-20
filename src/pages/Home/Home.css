@@ -1,0 +1,11 @@
+.container{
+    padding-left: 160px;
+    padding-right: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+.page-heading{
+    font-size: x-large;
+    padding-left: 160px;
+    padding-bottom: 10px;
+}
