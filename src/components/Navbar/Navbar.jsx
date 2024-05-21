@@ -4,6 +4,7 @@ import logo from '../../assets/logo.png'
 import search from '../../assets/search.png'
 import sell from '../../assets/sell.png'
 import { IoMdSearch } from "react-icons/io";
+import { logout } from '../../config'
 
 function Navbar() {
   return (
@@ -18,7 +19,7 @@ function Navbar() {
         <select className='language-dropdown'>
             <option value="" className='language'>ENGLISH</option>
         </select>
-        <p className='login'>Login</p>
+        <p className='login' onClick={()=>{logout()}}>Logout</p>
         <img src={sell} className='sell' />
     </div>
   )
