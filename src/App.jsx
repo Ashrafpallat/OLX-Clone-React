@@ -4,6 +4,8 @@ import Signup from './pages/Signup/Signup'
 import { Routes, Route, useNavigate } from 'react-router-dom'
 import { onAuthStateChanged } from 'firebase/auth'
 import { auth } from './config'
+import Create from './pages/Create/Create'
+import ViewPost from './pages/ViewPost/ViewPost'
 
 function App() {
 
@@ -25,6 +27,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/signup' element={<Signup />}/>
+        <Route path='/create' element={<Create/>}/>
+        <Route path='/viewpost/:postId' element={<ViewPost/>}/>
       </Routes>
     </div>
   )

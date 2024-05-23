@@ -1,9 +1,18 @@
-.container{
-    padding-left: 160px;
-    padding-right: 160px;
+.card-container {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+
+.cardHome {
+    /* flex: 1 1 calc(25% - 20px); Adjust the -20px to account for margins/padding if needed */
+    box-sizing: border-box;
+    /* margin: 10px; Optional: to add spacing between cards */
+}
+
 .page-heading{
     font-size: x-large;
     padding-left: 160px;

@@ -5,6 +5,8 @@ import search from '../../assets/search.png'
 import sell from '../../assets/sell.png'
 import { IoMdSearch } from "react-icons/io";
 import { logout } from '../../config'
+import { Link } from 'react-router-dom';
+
 
 function Navbar() {
   return (
@@ -20,7 +22,8 @@ function Navbar() {
             <option value="" className='language'>ENGLISH</option>
         </select>
         <p className='login' onClick={()=>{logout()}}>Logout</p>
-        <img src={sell} className='sell' />
+        <Link to={'/create'}> <img src={sell} className='sell' /> </Link>
+        
     </div>
   )
 }

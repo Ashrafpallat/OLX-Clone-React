@@ -1,19 +1,18 @@
-import React from 'react'
-import './Card.css'
+// Card.js
+import React from 'react';
+import './Card.css';
 
-function Card() {
+function Card({ product }) {
   return (
     <div className="card-container">
       <div className="card">
-        <img src="https://via.placeholder.com/150" className='card-image' alt="image not found" />
-        <h1 className='card-title'>₹24,00,000</h1>
-        <p className='card-description text-sm'> 2023 - 23000.0 km</p>
-        <p className='text-sm text-gray-500'>Mahindra XUV700 AX7 AWD, 2023</p>
-        {/* <p className='seller'>ROSHINI SECTOR 7, DELHI</p> */}
+        <img src={product.imageUrl || "https://via.placeholder.com/150"} className='card-image' alt="Product" />
+        <h1 className='card-title'>₹{product.price}</h1>
+        <p className='text-sm'>{product.name}</p>
+        <p className='card-description text-sm text-gray-500'>{product.description}</p>
       </div>
     </div>
-
-  )
+  );
 }
 
-export default Card
+export default Card;
