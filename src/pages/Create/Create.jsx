@@ -53,7 +53,7 @@ function Create() {
     return (
         <>
             {/* <Navbar /> */}
-            <div className="container">
+            <div className="create-container">
                 <div className="form-container">
                     <h2>Product Form</h2>
                     <form onSubmit={handleSubmit}>

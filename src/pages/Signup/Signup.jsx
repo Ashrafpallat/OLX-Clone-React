@@ -26,7 +26,7 @@ function Signup() {
   // }
 
   return (
-    <div className="container">
+    <div className="signup-container">
       <div className="form-wrapper">
         <img src={logo} className='logo' />
         {/* <h2 className="form-title">Sign Up</h2> */}
